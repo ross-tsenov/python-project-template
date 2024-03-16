@@ -14,7 +14,7 @@ RUN apt-get install -y --no-install-recommends \
     make \
     git \
     wget \
-    curl 
+    curl
 
 RUN apt-get install -y --no-install-recommends \
     python3 \
@@ -35,11 +35,11 @@ FROM debian as poetry
 
 ENV PATH="/home/vscode/.local/bin:${PATH}"
 
-ARG PYTHON_VIRTUALENV_HOME=/home/vscode/${PROJECT_NAME}-py-env \
+ARG PYTHON_VIRTUALENV_HOME=/home/vscode/project-py-env \
     POETRY_VERSION=1.8.2
 
 ENV POETRY_VIRTUALENVS_IN_PROJECT=false \
-    POETRY_NO_INTERACTION=true 
+    POETRY_NO_INTERACTION=true
 
 RUN python3 -m venv ${PYTHON_VIRTUALENV_HOME} && \
     $PYTHON_VIRTUALENV_HOME/bin/pip install --upgrade pip wheel && \
@@ -56,7 +56,7 @@ FROM poetry as project-dev
 
 COPY --chown=vscode:vscode pyproject.toml poetry.lock* ./
 
-RUN poetry install --no-root --with dev
+RUN poetry install --no-root --with dev --with docs
 
 WORKDIR /workspaces/${PROJECT_NAME}
 
