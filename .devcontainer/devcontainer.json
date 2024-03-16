@@ -5,11 +5,11 @@
     "context": "..",
     "dockerFile": "./Dockerfile",
     "runArgs": [
-		"--cpus=1.0",
-        "--memory=1g",
-        "--ipc=host",
-        "--privileged",
-        "--net=host"
+		// "--cpus=1.0",
+        // "--memory=1g",
+        // "--ipc=host",
+        // "--privileged",
+        // "--net=host"
     ],
     "mounts": [
 		// {
@@ -20,7 +20,7 @@
     ],
 	"customizations": {
 		"vscode": {
-			"extensions": [   
+			"extensions": [
 				"ms-python.python",
 				"ms-azuretools.vscode-docker",
 				"njpwerner.autodocstring",
@@ -37,10 +37,9 @@
 				"redhat.vscode-yaml"
 			],
 			"settings": {
-				"python.defaultInterpreterPath": "/home/vscode/python-project-template-py-env/bin/python"
+				"python.defaultInterpreterPath": "/home/vscode/project-py-env/bin/python"
 			}
 		}
-		
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
