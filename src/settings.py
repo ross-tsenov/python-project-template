@@ -1,4 +1,4 @@
-from enum import StrEnum
+from enum import StrEnum, auto
 from typing import Literal
 
 from dotenv import load_dotenv
@@ -11,8 +11,8 @@ __all__ = [
 
 
 class Environment(StrEnum):
-    DEV = "dev"
-    PROD = "prod"
+    DEV = auto()
+    PROD = auto()
 
 
 LoggingLevel = Literal[
@@ -30,7 +30,7 @@ LoggingLevel = Literal[
 class Settings(BaseSettings):
     """Global application settings loaded from the .env file."""
 
-    env: Environment = Environment.DEV
+    env: Environment = Environment.DEV  # type: ignore
     logger_name: str = "project_logger"
     logging_level: LoggingLevel = "INFO"
 

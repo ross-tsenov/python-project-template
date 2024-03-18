@@ -4,16 +4,16 @@ This Python Project Template is designed to streamline the development process, 
 
 ## Tooling
 
-- **Poetry**: Used for dependency management and packaging, making it simple to manage project libraries and their versions.
-- **Pydantic Settings**: Loads and validates settings from `.env` files, ensuring configurations are both accessible and correctly typed.
-- **Ruff**: A fast and comprehensive linter that checks for syntax errors and enforces style consistency.
-- **Mypy**: A static type checker for Python, enhancing code quality and detect errors before runtime.
-- **Pytest**: The go-to framework for writing and running tests, ensuring your code behaves as expected.
-- **Pre-commit**: Runs a series of checks (linting, formatting, type checking) before each commit to maintain code quality.
-- **MkDocs**: Generates project documentation from Markdown files, making it easy to create and maintain up-to-date documentation.
-- **Simple Logger**: A basic logging implementation that can be easily customized and integrated throughout the project.
-- **Devcontainer**: Supports development inside a Docker container in VSCode or GitHub Codespaces, providing a consistent and isolated development environment.
-- **GitHub Actions**: Automates linting, type checking, and testing workflows, ensuring that code meets quality standards before merging.
+- [**Poetry**](https://github.com/python-poetry/poetry): Used for dependency management and packaging, making it simple to manage project libraries and their versions.
+- [**Pydantic Settings**](https://github.com/pydantic/pydantic-settings): Loads and validates settings from `.env` files, ensuring configurations are both accessible and correctly typed.
+- [**Ruff**](https://github.com/astral-sh/ruff): A fast and comprehensive linter that checks for syntax errors and enforces style consistency.
+- [**Mypy**](https://github.com/python/mypy): A static type checker for Python, enhancing code quality and detect errors before runtime.
+- [**Pytest**](https://github.com/pytest-dev/pytest): The go-to framework for writing and running tests, ensuring your code behaves as expected.
+- [**Pre-commit**](https://github.com/pre-commit/pre-commit): Runs a series of checks (linting, formatting, type checking) before each commit to maintain code quality.
+- [**MkDocs**](https://github.com/mkdocs/mkdocs): Generates project documentation from Markdown files, making it easy to create and maintain up-to-date documentation.
+- [**Simple Logger**](https://docs.python.org/3/library/logging.html): A basic logging implementation that can be easily customized and integrated throughout the project.
+- [**Devcontainer**](https://github.com/microsoft/vscode-dev-containers): Supports development inside a Docker container in VSCode or GitHub Codespaces, providing a consistent and isolated development environment.
+- [**GitHub Actions**](https://github.com/features/actions): Automates linting, type checking, and testing workflows, ensuring that code meets quality standards before merging.
 
 ## Folder Structure
 
