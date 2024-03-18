@@ -30,7 +30,7 @@ LoggingLevel = Literal[
 class Settings(BaseSettings):
     """Global application settings loaded from the .env file."""
 
-    env: Environment = Environment.DEV  # type: ignore
+    env: Environment = Environment.DEV
     logger_name: str = "project_logger"
     logging_level: LoggingLevel = "INFO"
 
