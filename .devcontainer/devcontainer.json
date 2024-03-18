@@ -59,5 +59,6 @@
         "args": {
             "PROJECT_NAME": "python-project-template"
         }
-    }
+    },
+	"onCreateCommand": "pre-commit install-hooks"
 }
