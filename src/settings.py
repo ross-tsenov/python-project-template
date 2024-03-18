@@ -1,4 +1,4 @@
-from enum import StrEnum, auto
+from enum import StrEnum
 from typing import Literal
 
 from dotenv import load_dotenv
@@ -11,8 +11,8 @@ __all__ = [
 
 
 class Environment(StrEnum):
-    DEV = auto()
-    PROD = auto()
+    DEV = "dev"
+    PROD = "prod"
 
 
 LoggingLevel = Literal[
