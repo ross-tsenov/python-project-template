@@ -5,6 +5,7 @@ import pytest
 from src import get_version_from_pyproject
 
 
+@pytest.fixture()
 def path_to_pyproject(tmp_path: Path) -> Path:
     temp_dir = tmp_path / "sub"
     temp_dir.mkdir()
